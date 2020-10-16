@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">MLKitDemo</string>
+
+    <string name="select_picture_trec">Select Picture</string>
+    <string name="take_picture_trec">Take Picture</string>
+    <string name="play_trec">Read</string>
+    <string name="please_select_picture_trec">Please select a photo to process~</string>
+    <string name="read_finish_trec">Read finish</string>
+    <string name="read_start_trec">Read starts</string>
+    <string name="title_trec">Text Related Services</string>
+    <string name="subject_trec">You can select a photo from gallery or take with camera</string>
+    <string name="detail_trec"> </string>
+    <string name="take_photo_trec">Text Reconition</string>
+    <string name="cancel_trec">cancel</string>
+    <string name="settings_trec">Settings</string>
+    <string name="camera_permission_rationale_trec">This app requires camera and storage access</string>
+    <string name="login">LOGIN</string>
+    <string name="restart">Restart</string>
+    <string name="food_detected">When food is detected, detection stops, click restart to re-detect.</string>
+    <string name="object_detection_camera">Object Detectıon Camera</string>
+    <string name="object_detection_image">Object Detectıon Image</string>
+    <string name="download_model">Choose language and tap here for use local translation</string>
+    <string name="del_models">Delete downloaded models</string>
+
+
+    <array name="languages">
+        <item>Turkish</item>
+        <item>English</item>
+        <item>Chinese</item>
+        <item>Russian</item>
+        <item>Portuguese</item>
+        <item>Japanese</item>
+        <item>German</item>
+        <item>Italian</item>
+        <item>French</item>
+        <item>Spanish</item>
+        <item>Arabic</item>
+    </array>
+    <string name="title_activity_scene_detection">SceneDetection</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mapp.huawei.object_detectionactivity.ObjectDetectionCamera">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <com.mapp.huawei.object_detection.LensEnginePreview
+            android:id="@+id/object_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.mapp.huawei.object_detection.GraphicOverlay
+                android:id="@+id/object_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.mapp.huawei.object_detection.LensEnginePreview>
+
+        <TextView
+            android:id="@+id/textViewTips"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:autoLink="email"
+            android:gravity="center"
+            android:text="@string/food_detected" />
+
+        <Button
+            android:id="@+id/detect_start"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:background="@color/upsdk_white"
+            android:text="@string/restart" />
+    </RelativeLayout>
+</layout>

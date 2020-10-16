@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mapp.huawei.view.StartPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_recognition"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="40sp"
+                        android:background="@drawable/select_feature_style"
+                        android:fontFamily="@font/syncopate"
+                        android:gravity="center"
+                        android:text="TEXT Related Services"
+                        android:textStyle="bold"></Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_translate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="40sp"
+                        android:background="@drawable/select_feature_style"
+                        android:fontFamily="@font/syncopate"
+                        android:gravity="center"
+                        android:text="TRANSLATE"
+                        android:textStyle="bold"></Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_object_detection"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="2sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="40sp"
+                        android:background="@drawable/select_feature_style"
+                        android:fontFamily="@font/syncopate"
+                        android:gravity="center"
+                        android:text="OBJECT DETECTION"
+                        android:textStyle="bold"></Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_landmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="2sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="40sp"
+                        android:background="@drawable/select_feature_style"
+                        android:fontFamily="@font/syncopate"
+                        android:gravity="center"
+                        android:text="LANDMARK"
+                        android:textStyle="bold"></Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_face_detection"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="2sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="40sp"
+                        android:background="@drawable/select_feature_style"
+                        android:fontFamily="@font/syncopate"
+                        android:gravity="center"
+                        android:text="FACE DETECTION"
+                        android:textStyle="bold"></Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_img_segmnt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="2sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="40sp"
+                        android:background="@drawable/select_feature_style"
+                        android:fontFamily="@font/syncopate"
+                        android:gravity="center"
+                        android:text="Image Segmentation"
+                        android:textStyle="bold"></Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_sound_detection"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="2sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="40sp"
+                        android:background="@drawable/select_feature_style"
+                        android:fontFamily="@font/syncopate"
+                        android:gravity="center"
+                        android:text="Sound Deetction"
+                        android:textStyle="bold"></Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_text_embedding"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="2sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="40sp"
+                        android:background="@drawable/select_feature_style"
+                        android:fontFamily="@font/syncopate"
+                        android:gravity="center"
+                        android:text="Text Embedding"
+                        android:textStyle="bold"></Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_scene_detection"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="2sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginBottom="40sp"
+                        android:background="@drawable/select_feature_style"
+                        android:fontFamily="@font/syncopate"
+                        android:gravity="center"
+                        android:text="Scene Detetion"
+                        android:textStyle="bold"></Button>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

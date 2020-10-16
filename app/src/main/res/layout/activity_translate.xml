@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mapp.huawei.view.language_related.Translate">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="5sp">
+
+        <EditText
+            android:id="@+id/translateEdittext"
+            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/custom_edge"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edge"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divedeView"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/edge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/translateEdittext" />
+
+        <ImageView
+            android:id="@+id/imgAudioSource"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="50sp"
+            app:srcCompat="@drawable/audio"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TextView
+            android:id="@+id/translationText"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_edge"
+            android:text="Translation"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/translateEdittext"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/translateEdittext"
+            app:layout_constraintTop_toBottomOf="@+id/languageSpinner" />
+
+        <Spinner
+            android:id="@+id/languageSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divedeView" />
+
+        <TextView
+            android:id="@+id/translationLanguageText"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_edge"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/languageSpinner"
+            app:layout_constraintEnd_toStartOf="@+id/languageSpinner"
+            app:layout_constraintStart_toStartOf="@+id/translationText"
+            app:layout_constraintTop_toTopOf="@+id/languageSpinner" />
+
+        <Button
+            android:id="@+id/translateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_edge"
+            android:text="Translate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/translationText" />
+
+        <ImageView
+            android:id="@+id/imgMicrophoneTarget"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="Translate"
+            app:layout_constraintTop_toTopOf="@+id/translateButton"
+            app:srcCompat="@drawable/microphone"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <TextView
+            android:paddingTop="18dp"
+            android:id="@+id/txt_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/imgMicrophoneTarget"
+            android:text="Pause"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/txt_resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:paddingLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/imgMicrophoneTarget"
+            app:layout_constraintLeft_toRightOf="@+id/txt_pause"
+            android:text="Resume"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/txt_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:paddingLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/imgMicrophoneTarget"
+            app:layout_constraintLeft_toRightOf="@+id/txt_resume"
+            android:text="Stop"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/txt_tts_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_pause"
+            android:text="TTS Details"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/txt_detect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:paddingLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_stop"
+            app:layout_constraintLeft_toRightOf="@+id/txt_tts_details"
+            android:text="Detect"
+            tools:ignore="MissingConstraints"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/txt_tts_details">
+
+            <TextView
+                android:id="@+id/txt_download_model"
+                android:layout_width="wrap_content"
+                android:paddingTop="15sp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:text="@string/download_model"
+                app:layout_constraintTop_toBottomOf="@id/translateButton"/>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/CircularDeterminateProgressBar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:progress="0" />
+
+
+            <TextView
+                android:id="@+id/txt_del_models"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/del_models"></TextView>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

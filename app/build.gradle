@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.huawei.agconnect'
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.0"
+    dataBinding {
+        enabled = true
+    }
+    defaultConfig {
+        applicationId "com.mapp.huawei"
+        minSdkVersion 28
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('key.jks')
+            keyAlias 'PairDemoApp'
+            keyPassword '123456'
+            storePassword '123456'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.release
+            debuggable true
+        }
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.preference:preference:1.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    def version = '2.0.3.300'
+    def old='2.0.1.300'
+    def iki ="2.0.1.302"
+
+    //DOCUMENT RECOGNITION
+    implementation "com.huawei.hms:ml-computer-vision-cloud:$version"
+
+    //TRANSLATION
+    implementation "com.huawei.hms:ml-computer-translate:$version"
+    implementation "com.huawei.hms:ml-computer-translate-model:$version"
+
+    //AUTOMATIC SPPECH RECOGNITION
+    implementation "com.huawei.hms:ml-computer-voice-asr-plugin:$version"
+
+    //TEXT TO SPEECH
+    implementation "com.huawei.hms:ml-computer-voice-tts:2.0.2.300"
+
+    //LANGUAGE DETECTION
+    implementation "com.huawei.hms:ml-computer-language-detection:$version"
+    implementation "com.huawei.hms:ml-computer-language-detection-model:$version"
+
+    implementation "com.huawei.hms:ml-computer-card-bcr:$version"
+    implementation "com.huawei.hms:ml-computer-card-gcr-plugin:2.0.1.301"
+
+    // Import the text image super-resolution m
+    implementation "com.huawei.hms:ml-computer-vision-textimagesuperresolution:$version"
+    implementation "com.huawei.hms:ml-computer-vision-textimagesuperresolution-model:$version"
+
+    implementation "com.huawei.hms:ml-speech-semantics-sounddect-sdk:$version"
+    implementation "com.huawei.hms:ml-speech-semantics-sounddect-model:$version"
+
+    //NLP
+    implementation "com.huawei.hms:ml-nlp-textembedding:$version"
+
+    //SCENE DETECTION
+    implementation "com.huawei.hms:ml-computer-vision-scenedetection:$version"
+    implementation "com.huawei.hms:ml-computer-vision-scenedetection-model:$version"
+
+
+}

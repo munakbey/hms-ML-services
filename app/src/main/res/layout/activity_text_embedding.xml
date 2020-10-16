@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.nlp.TextEmbedding">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/select_feature_style"
+            android:orientation="vertical"
+            android:padding="20sp">
+
+
+            <EditText
+                android:id="@+id/txt_sentence1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Input Sentence" />
+
+            <EditText
+                android:id="@+id/txt_sentence2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:hint="Input Sentence" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_sentences_similarity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@drawable/select_feature_style"
+                    android:text="Check similarity" />
+
+                <TextView
+                    android:id="@+id/txt_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/select_feature_style"
+            android:orientation="vertical"
+            android:padding="20sp">
+
+
+            <EditText
+                android:id="@+id/txt_word1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Input Word" />
+
+            <EditText
+                android:id="@+id/txt_word2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:hint="Input Word" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_word_similarity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="@drawable/select_feature_style"
+                    android:text="Check similarity" />
+
+                <TextView
+                    android:id="@+id/txt_result_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/select_feature_style"
+            android:orientation="vertical"
+            android:padding="20sp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/txt_input_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Input Word"/>
+                <EditText
+                    android:id="@+id/txt_input_word_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Number of similar words. The value range is [1, 30]"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_analyse_similar_words"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="@drawable/select_feature_style"
+                android:text="Analyse Similar Words" />
+
+            <TextView
+                android:id="@+id/txt_similar_word_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/select_feature_style"
+            android:orientation="vertical"
+            android:padding="20sp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dictionary Dimension: "/>
+
+                <TextView
+                    android:id="@+id/txt_dictionary_dimension"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dictionary Size: "/>
+
+                <TextView
+                    android:id="@+id/txt_dictionary_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dictionary Version No: "/>
+
+                <TextView
+                    android:id="@+id/txt_dictionary_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Analyse Sentence Vector: "/>
+
+                <TextView
+                    android:id="@+id/txt_analyse_sentence_vector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Analyse Word Vector: "/>
+
+                <TextView
+                    android:id="@+id/txt_analyse_word_vector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</layout>
