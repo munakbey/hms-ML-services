@@ -1,1 +1,1 @@
-# huaweidemoapp
+# hms ml kit sample app
